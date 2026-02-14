@@ -12,7 +12,6 @@ WHERE transaction_amount IS NULL
    OR transaction_date > CURRENT_DATE;
 
 -- 2. ПОИСК ДУБЛИКАТОВ И "ЗОЛОТАЯ ЗАПИСЬ"
--- В вакансии ждут работу с качеством данных. Этот запрос находит эталонную запись.
 WITH DeduplicatedData AS (
     SELECT 
         *,
@@ -26,7 +25,7 @@ SELECT * FROM DeduplicatedData
 WHERE row_num = 1;
 
 -- 3. РАСЧЕТ ПРОДУКТОВЫХ МЕТРИК (AD-HOC запрос)
--- Пример того, как ты считаешь Retention или активность (DAU)
+-- считаем Retention или активность (DAU)
 SELECT 
     date_trunc('day', login_time) as day,
     count(distinct user_id) as dau,
