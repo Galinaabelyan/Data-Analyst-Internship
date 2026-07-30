@@ -1,11 +1,17 @@
-# Portfolio: Data Analytics & Quality Assurance
-Здесь собраны примеры моих задач по работе с данными.
+# Data & Product Analytics Portfolio
 
-### Что внутри:
-* **data_quality_analysis.sql**: Примеры сложных SQL-запросов (Window Functions, CTE, агрегации). Фокус на проверке качества данных и расчете KPI (DAU, MAU).
-* **data_cleaning_logic.py**: Скрипт на Python для обработки "грязных" данных и поиска эталонных записей (Golden Record). Проект на базе кейса от Т1.
+Welcome! This repository contains practical analytical scripts, SQL queries, and product metric calculations.
 
-### Мои навыки:
-* **SQL:** Написание запросов для валидации витрин данных, поиск расхождений.
-* **Python:** Очистка данных в Pandas, работа с пропусками и дубликатами.
-* **Продукт:** Понимание метрик Retention, LTV и их влияния на бизнес-отчетность.
+## Repository Structure
+* `data_quality_analysis.sql` — Advanced SQL scripts: CTEs, Window Functions (`ROW_NUMBER`), Data Integrity Contracts, and DAU/MAU metrics.
+* `data_cleaning_logic.py` — Python data-cleaning pipeline using `pandas` to resolve duplicates and build Golden Master Records.
+* `product_retention_ltv.sql` — Cohort analysis for user retention and total customer value calculations.
+
+## Skills & Tools
+* **SQL:** Data validation, anomaly detection, window functions, complex aggregations.
+* **Python (Pandas, NumPy):** Data scrubbing, missing values imputation, data formatting.
+* **Product Analytics:** Retention Analysis, DAU/MAU metrics, User Value tracking, A/B Testing logic.
+
+## Projects Included
+1. **Financial Data Integrity Validation** — ETL data quality checks and transaction deduplication logic.
+2. **Campus App Analytics (Hackathon Project)** — User activity, weekly retention cohorts, and user engagement metrics.
